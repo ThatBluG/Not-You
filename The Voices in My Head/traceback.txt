@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 88, in script
+    python:
+  File "game/script.rpy", line 92, in <module>
+    open(config.basedir + "/images/NSFW/first_letter.txt", "wb").write(renpy.file("cLue11.jpg").read())
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\gamin\\Downloads\\ddlc\\The Voices in My Head/images/NSFW/first_letter.txt'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 88, in script
+    python:
+  File "C:\Users\gamin\Downloads\renpy-8.3.7-sdk\renpy\ast.py", line 834, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\gamin\Downloads\renpy-8.3.7-sdk\renpy\python.py", line 1187, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 92, in <module>
+    open(config.basedir + "/images/NSFW/first_letter.txt", "wb").write(renpy.file("cLue11.jpg").read())
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\gamin\\Downloads\\ddlc\\The Voices in My Head/images/NSFW/first_letter.txt'
+
+Windows-10-10.0.26100 AMD64
+Ren'Py 8.3.7.25031702
+The Voices in My Head 1.0
+Tue Jun 10 09:34:46 2025
